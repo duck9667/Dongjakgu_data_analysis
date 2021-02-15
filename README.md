@@ -7,11 +7,13 @@
 - 배경 : 수요에 비해 공급이 적다.
 
 ### 참고 데이터
+```
 - 서울시 고등학교 수(2019-09-29)
 - 출처 : [https://kess.kedi.re.kr/post/6684877?itemCode=04&menuId=m_02_04_02](https://kess.kedi.re.kr/post/6684877?itemCode=04&menuId=m_02_04_02)
 
 - 서울시 청소년 인구 수 통계(2020-02-26)
 - 출처 : [http://data.seoul.go.kr/dataList/10787/S/2/datasetView.do](http://data.seoul.go.kr/dataList/10787/S/2/datasetView.do)
+```
 
 
 # 2. 분석 순서
