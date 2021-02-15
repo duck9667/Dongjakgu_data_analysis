@@ -9,10 +9,10 @@
 ### 참고 데이터
 ```
 - 서울시 고등학교 수(2019-09-29)
-- 출처 : [https://kess.kedi.re.kr/post/6684877?itemCode=04&menuId=m_02_04_02](https://kess.kedi.re.kr/post/6684877?itemCode=04&menuId=m_02_04_02)
+- 출처 : https://kess.kedi.re.kr/post/6684877?itemCode=04&menuId=m_02_04_02)\
 
 - 서울시 청소년 인구 수 통계(2020-02-26)
-- 출처 : [http://data.seoul.go.kr/dataList/10787/S/2/datasetView.do](http://data.seoul.go.kr/dataList/10787/S/2/datasetView.do)
+- 출처 : http://data.seoul.go.kr/dataList/10787/S/2/datasetView.do
 ```
 
 
@@ -22,19 +22,21 @@
 > 2.3. 상위 집단 대상으로 필터링 - 최적의 입지  
 
 ### 참고 데이터
+```
 - 주거 인구(2019-10-28)
-- 출처 : [https://data.seoul.go.kr/dataList/10727/S/2/datasetView.do](https://data.seoul.go.kr/dataList/10727/S/2/datasetView.do)
+- 출처 : https://data.seoul.go.kr/dataList/10727/S/2/datasetView.do
 
 - 현재 고등학교 갯수(2020-04-21)
-- 출처 : [https://kess.kedi.re.kr/post/6684877?itemCode=04&menuId=m_02_04_02](https://kess.kedi.re.kr/post/6684877?itemCode=04&menuId=m_02_04_02)
+- 출처 : https://kess.kedi.re.kr/post/6684877?itemCode=04&menuId=m_02_04_02
 
 - 연령별 인구(13-19, 2020-03-31)
-- 출처: [http://27.101.213.4/#](http://27.101.213.4/#)
+- 출처: http://27.101.213.4/#
+```
 
 ### 데이터 전처리
-1. raw data 수집  
-2. 행정동 단위로 aggregation 진행  
-3. albow method로 최적의 클러스터 개수 결정  
+> 1. raw data 수집  
+> 2. 행정동 단위로 aggregation 진행  
+> 3. albow method로 최적의 클러스터 개수 결정  
 ![그림1](https://user-images.githubusercontent.com/33515088/107917442-4c973200-6fab-11eb-95c7-1f5ebc1a7fbf.png)
 
 4. 4개의 클러스터로 나눈 후 각 클러스터의 특징 파악  
@@ -58,15 +60,16 @@
 
 ## 2.1. 행정동 2차 필터링
 ### 참고 데이터
+```
 - 치안등급(2019-06)
-- 출처 : [https://www.safemap.go.kr/main/smap.do?coreThemaMap=&flag=2&level=&searchOpt=&searchTxt=&sideMenu=3](https://www.safemap.go.kr/main/smap.do?coreThemaMap=&flag=2&level=&searchOpt=&searchTxt=&sideMenu=3)
+- 출처 : https://www.safemap.go.kr/main/smap.do?coreThemaMap=&flag=2&level=&searchOpt=&searchTxt=&sideMenu=3
 
 - CCTV 개수(2020-03-27)
-- 출처 : [https://data.seoul.go.kr/dataList/OA-13272/F/1/datasetView.do](https://data.seoul.go.kr/dataList/OA-13272/F/1/datasetView.do)
+- 출처 : https://data.seoul.go.kr/dataList/OA-13272/F/1/datasetView.do
 
 - 버스 정류장 개수(2020-03-06)
-- 출처 : [https://data.seoul.go.kr/dataList/OA-15067/S/1/datasetView.do](https://data.seoul.go.kr/dataList/OA-15067/S/1/datasetView.do)
-
+- 출처 : https://data.seoul.go.kr/dataList/OA-15067/S/1/datasetView.do
+```
 
 ### 데이터 전처리
 1. 각 피처들의 특징을 동일한 scale로 스케일링 진행 - 버스정류장 개수, cctv개수, 치안 등급을 정량화
@@ -78,14 +81,16 @@
 
 ## 2.3. 상위 집단 대상으로 필터링 - 최적의 입지
 ### 참고 데이터
+```
 - 가용지 구분(2019-10-23)
-- 출처 : [http://openapi.nsdi.go.kr/nsdi/eios/ServiceDetail.do](http://openapi.nsdi.go.kr/nsdi/eios/ServiceDetail.do) → 토지특성정보
+- 출처 : http://openapi.nsdi.go.kr/nsdi/eios/ServiceDetail.do
 
 - 주변환경(2020-3-31)
-- 출처 : [http://www.localdata.go.kr/devcenter/dataDown.do?menuNo=20001](http://www.localdata.go.kr/devcenter/dataDown.do?menuNo=20001)
+- 출처 : http://www.localdata.go.kr/devcenter/dataDown.do?menuNo=20001
 
 - 행안부 업종데이터(2020-03-31)
-- 출처 : [http://openapi.nsdi.go.kr/nsdi/eios/ServiceDetail.do?svcSe=F&svcId=F106](http://openapi.nsdi.go.kr/nsdi/eios/ServiceDetail.do?svcSe=F&svcId=F106)
+- 출처 : http://openapi.nsdi.go.kr/nsdi/eios/ServiceDetail.do?svcSe=F&svcId=F106
+```
 
 # 4. 입지 후보
 - 최종적인 아웃풋은 대략적인 '도로명 주소' 나 '번지'로 진행한다.
